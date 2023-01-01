@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="Coursesdb.js"></script>
+  </head>
+<style>
+
+#Page-Content{
+  display: flex;
+  justify-content: space-between;
+
+}
+#category-container{
+flex-direction: column;
+height: 800px;
+width: 300px;
+margin-top: 15px;
+padding-top: 1px;
+}
+.list-group{
+    margin-left: 50px;
+    padding-left: 10px;
+    margin-left: 0px;
+    margin-top: 5px;
+    border-left: 12px solid rgb(118, 83, 243);
+}
+.list-group-item{
+margin-top: 6px;
+border-left: 2px solid rgb(118, 83, 243);
+border-right: none;
+border-top: none;
+border-bottom: none;
+background: none ;
+}
+#categorysearchbar{
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  padding-right: 80px;
+  text-align: center;
+  font-size: large;
+  border: 3px solid black;
+  border-radius: 25px;
+}
+#Courses-Container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 100px;
+  margin-left: 100px;
+  width: 2000px;
+
+}
+
+</style>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-purple shadow fixed-top" style="background-color: rgb(118, 83, 243); padding: 5px; margin-left: 10px;margin-right: 10px;">
+        <div class="container">
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="Home.html">Home</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="Courses.html" style="font-weight: 500; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Courses</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="About.html">About</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <div id="Page-Content">
+
+     <div id="category-container" class="bg-white p-5">
+      <input type="text" id="categorysearchbar" placeholder="search">
+        <ul class="list-group">
+          <h2 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: bold;">Categories</h2><br>
+          <li class="list-group-item"><a href="#" class="nav-link" id="allcateg" style="color: rgb(61, 34, 110);font-weight:bold;">All</a></li>
+          <li class="list-group-item"><a href="#" class="nav-link" id="HTMLcateg" style="color: rgb(61, 34, 110);font-weight:bold;">HTML</a></li>
+          <li class="list-group-item"><a href="#" class="nav-link" id="CSScateg" style="color: rgb(61, 34, 110);font-weight:bold;">CSS</a></li>
+          <li class="list-group-item"><a href="#" class="nav-link" id="JScateg" style="color: rgb(61, 34, 110);font-weight:bold;">JS</a></li>
+          <li class="list-group-item"><a href="#" class="nav-link" id="PHPcateg" style="color: rgb(61, 34, 110);font-weight:bold;">PHP</a></li>
+        </ul>
+
+        <div id="PriceRange" style="margin-top: 50px;">
+          <label for="pricerange" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-weight: bold;">PRICE: (0$-100$)</label><br><br>
+          <input type="range" min="0" max="100" step="0.1" id="pricerange" value="100"><br>
+          <label id="pricevalue" style="font-weight: bold;">Value: </label>
+        </div>
+      </div>
+      <div id="Courses-Container" class="container">
+         
+      </div>
+    </div>
+    <div><footer style="text-align: center; margin-top: 20px;"><small class="text-muted">KASSIDE YOUNESS © 2022-2023</small></footer> </div>
+    <script src="p3script.js"></script>
+</body>
+</html>

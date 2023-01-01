@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="Coursesdb.js"></script>
+    <style>
+      .masthead {
+  height: 600px;
+  min-height: 300px;
+  background-size: cover;
+  background-color: rgb(6, 6, 10);
+  border: 10px solid rgb(118, 83, 243);
+  border-radius: 3px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.flexible-container {
+  position: relative;
+  padding-bottom: 50%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+video{
+  width: 100%;
+  height: 500px;
+  
+}
+.overlay {
+    position:absolute;
+    top:0;
+    bottom: 100;
+    left:0;
+    z-index:1;
+    padding-top: 325px;
+    padding-left: 115px;
+}
+.card-container{
+  display: flex;
+  justify-content: space-between;
+}
+
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-purple shadow fixed-top" style="background-color: rgb(118, 83, 243); padding: 5px; margin-left: 10px;margin-right: 10px;">
+      <div class="container">
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="Home.html" style="font-weight: 500; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Courses.html">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="About.html">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <header class="masthead" style="padding: 10px; margin-left: 10px;margin-right: 10px;">
+      <div class="container h-100">
+        <div class="row h-100 align-items-center">
+          <div class="flexible-container">
+            </div>
+          <div class="col-12 text-center">
+            <img src="Typing-dark-GIF.gif" type="video/mp4" style="height: 500px;">
+            <div class="overlay"><h1 class="fw-light" style="font-weight: bold;font-family: Georgia, 'Times New Roman', Times, serif;color: white;">while(alive){Eat();Code();Sleep();Repeat();}</h1>
+              <button type="button" class="btn btn-outline-secondary" id="discoverclassespage" style="height: 50px; margin-top: 50px;"><a class="nav-link" href="Courses.html" style="color: rgb(199, 189, 216);font-weight: bold;" >Discover Courses</a></button></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    
+    <section class="py-5">
+      <h3 class="nav-item active" style="text-align: center;padding-bottom: 50px;color:rgb(118, 83, 243);">/COURSES</h3>
+      <div class="container">
+        <div class="card-container">
+        <div id=card1 class="card" style="width: 18rem;border: solid rgb(20, 14, 20);border-radius: 2px;">
+          <img class="card-img-top" src="..." alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Card1 title</h5>
+            <p class="card-text">textcard1.</p>
+          </div>
+        </div>
+          <div id="card2" class="card" style="width: 18rem;border: solid rgb(20, 14, 20);border-radius: 2px;">
+            <img id="img1"class="card-img-top" src="..." alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card2 title</h5>
+              <p class="card-text">textcard2.</p>
+            </div>
+          </div>
+          <div id="card3"class="card" style="width: 18rem;border: solid rgb(20, 14, 20);border-radius: 2px;">
+            <img class="card-img-top" src="..." alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card3 title</h5>
+              <p class="card-text">textcard3.</p>
+            </div>
+          </div>
+          </div>
+          <div style="text-align: center;"><button type="button" class="btn btn-outline-dark" id="allclassespage" style="margin-top:20px"><a class="nav-link" href="Courses.html" style="color: rgb(127, 73, 219); font-weight: bold;" >All Courses</a></button></div>
+        </div>
+        <div><footer style="text-align: center; margin-top: 20px;"><small class="text-muted">KASSIDE YOUNESS © 2022-2023</small></footer> </div>
+    </section>
+  </body>
+  <script src="p2script.js"></script>
+</html>
